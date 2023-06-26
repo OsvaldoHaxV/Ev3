@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juego</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <h1>Juego</h1>
+    <div id="estado-servidor">
+        <!-- Contenedor para mostrar el estado del servidor y el ID del juego -->
+        <h2>Estado del servidor</h2>
+        <p id="estado"></p> <!-- Aquí se mostrará el estado del servidor -->
+        <p id="juego-id"></p> <!-- Aquí se mostrará el ID del juego en curso o disponible -->
+    </div>
+    <div id="resultado-juego">
+        <!-- Contenedor para mostrar el resultado del juego -->
+        <h2>Resultado del juego</h2>
+        <form id="resultado-form">
+            <!-- Formulario para consultar el resultado del juego -->
+            <label for="juego-id-input">ID del juego:</label>
+            <input type="text" id="juego-id-input" name="juego_id">
+            <button type="submit">Consultar</button>
+        </form>
+        <p id="jugador-ganador"></p> <!-- Aquí se mostrará el jugador ganador -->
+        <p id="puntaje-acumulado"></p> <!-- Aquí se mostrará el puntaje acumulado de los jugadores -->
+    </div>
+    <script src="static/script.js"></script> <!-- Se carga el archivo JavaScript -->
+</body>
+</html>
